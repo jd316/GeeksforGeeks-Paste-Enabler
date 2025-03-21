@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "GeeksforGeeks Paste Enabler",
+  "version": "1.0",
+  "description": "Enable paste functionality on GeeksforGeeks coding platforms",
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.geeksforgeeks.org/*", 
+        "*://practice.geeksforgeeks.org/*",
+        "*://practice.geeksforgeeks.org/contest/*",
+        "*://practice.geeksforgeeks.org/contest/job-a-thon*",
+        "*://*.geeksforgeeks.org/job-a-thon/*",
+        "*://*.geeksforgeeks.org/jobathon/*",
+        "*://*.geeksforgeeks.org/events/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["activeTab", "clipboardRead", "clipboardWrite"]
+} 
