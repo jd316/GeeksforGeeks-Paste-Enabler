@@ -1,5 +1,9 @@
 # GeeksforGeeks Paste Enabler
 
+<p align="center">
+  <img src="icons/icon.png" alt="GeeksforGeeks Paste Enabler" width="200"/>
+</p>
+
 A browser extension that enables paste functionality on GeeksforGeeks coding platforms, including JobAthon and other contest pages where copy-paste is normally restricted.
 
 ## Features
